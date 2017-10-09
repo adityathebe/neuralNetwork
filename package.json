@@ -1,0 +1,14 @@
+{
+  "name": "neural",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aditya Thebe <me@adityathebe.com> (http://adityathebe.com)",
+  "license": "MIT",
+  "dependencies": {
+    "synaptic": "^1.1.3"
+  }
+}
