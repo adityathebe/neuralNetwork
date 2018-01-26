@@ -1,6 +1,8 @@
+// NAND gate with a single perceptron
+// Aditya Thebe
+
 const Perceptron = require('../perceptron');
 
-// Using this single perceptron to learn the NAND gate !
 let p = new Perceptron(2, 0.003);
 
 for ( let i = 0; i < 1000; i++ ) {
