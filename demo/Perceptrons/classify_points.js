@@ -1,7 +1,7 @@
 // Using a single perceptron to predict whether a given point is
 // above or below a line.
 
-const Perceptron = require('../src/perceptron');
+const Perceptron = require('../../src/perceptron');
 const n = new Perceptron(2, 0.03);
 
 // Generating the Training Data

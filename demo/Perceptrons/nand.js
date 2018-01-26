@@ -1,7 +1,7 @@
 // NAND gate with a single perceptron
 // Aditya Thebe
 
-const Perceptron = require('../perceptron');
+const Perceptron = require('../../src/perceptron');
 
 let p = new Perceptron(2, 0.003);
 

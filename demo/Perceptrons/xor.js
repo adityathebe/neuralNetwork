@@ -5,7 +5,7 @@
 However, we can use a combination of NAND gates like this : https://i.stack.imgur.com/Uktsg.png
 to make an XOR predictor. We use NAND (or NOR) specifically because it is a universal gate. */
 
-const Perceptron = require('../src/perceptron');
+const Perceptron = require('../../src/perceptron');
 const learning_rate = 0.03
 
 // Creating four perceptrons
