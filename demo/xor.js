@@ -1,11 +1,9 @@
 // XOR with 4 perceptrons
 // Aditya Thebe
 
-/* 
-	We cannot use a single perceptron to predict XOR gate due to its non-linearity.
-	However, we can use a combination of NAND gates like this : https://i.stack.imgur.com/Uktsg.png
-	to make an XOR predictor. We use NAND (or NOR) specifically because it is a universal gate.
-*/
+/* We cannot use a single perceptron to predict XOR gate due to its non-linearity.
+However, we can use a combination of NAND gates like this : https://i.stack.imgur.com/Uktsg.png
+to make an XOR predictor. We use NAND (or NOR) specifically because it is a universal gate. */
 
 const Perceptron = require('../src/perceptron');
 const learning_rate = 0.03
