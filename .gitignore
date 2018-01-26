@@ -1,2 +1,4 @@
 synaptic/node_modules
+demo/prestige_dataset.csv
+demo/regression.js
 index.js
