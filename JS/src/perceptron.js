@@ -11,7 +11,7 @@ class Perceptron {
 		}
 	}
 
-	train (inputs, desired_output) {
+	train (inputs, desired_output, adjust_bias) {
 
 		// Guess the result
 		let guess = this.predict(inputs);
@@ -21,7 +21,10 @@ class Perceptron {
 		for (let i = 0; i < this.weights.length; i++) {
 			this.weights[i] += this.learning_rate * error * inputs[i];         
 		}
-		this.bias += error * this.learning_rate;
+
+		if (adjust_bias) {
+			this.bias += error * this.learning_rate ;			
+		}		
 	}
 
 	predict (input_array) {

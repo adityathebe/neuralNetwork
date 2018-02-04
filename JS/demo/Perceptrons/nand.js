@@ -17,6 +17,9 @@ console.log( p.predict([0, 1]) )
 console.log( p.predict([1, 0]) )
 console.log( p.predict([1, 1]) )
 
+console.log(p.weights)
+console.log(p.bias)
+
 // This single perceptron can be used to predict
 // - AND gate
 // - OR gate

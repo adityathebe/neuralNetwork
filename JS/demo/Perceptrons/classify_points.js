@@ -1,17 +1,18 @@
 // Using a single perceptron to predict whether a given point is
 // above or below a line.
 
+const fs = require('fs');
 const Perceptron = require('../../src/perceptron');
-const n = new Perceptron(2, 0.03);
+const n = new Perceptron(2, 0.1);
 
 // Generating the Training Data
-let max_x = 100;
-let min_x = -100;
-let max_y = 100;
-let min_y = -100;
+let max_x = 1000;
+let min_x = -1000;
+let max_y = 1000;
+let min_y = -1000;
 
 // Generate 10000 random coordinates and train the perceptron
-for ( let i = 0; i < 10000; i++ ) {
+for ( let i = 0; i < 1000; i++ ) {
 	let x = Math.random() * max_x + Math.random() * min_x;
 	let y = Math.random() * max_y + Math.random() * min_y;
 	let input = [x, y];
@@ -40,6 +41,10 @@ for ( let i = 0; i < total; i++ ) {
 	}
 }
 
-
 let score = (correct / total) * 100;
 console.log(`Score = ${score.toFixed(2)} %`);
+
+// We can also get the equation developed by the perceptron
+let m = -n.weights[0] / n.weights[1];
+let c = -n.bias / n.weights[1];
+console.log(`y = ${m.toFixed(2)}x + ${c.toFixed(2)}`);
